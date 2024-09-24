@@ -1,0 +1,67 @@
+# Question 1:
+# Details of employees working in Dept 10 or 30.
+SELECT * FROM employees WHERE deptno IN (10, 30);
+
+# Question 2:
+# Names of employees hired during 1982.
+SELECT ename FROM employees WHERE hiredate LIKE '__-___-82';
+
+# Question 3:
+# Name and salary of employees earning commission.
+SELECT ename, sal FROM employees WHERE comm IS NOT NULL;
+
+# Question 4:
+# Details of employees working as a clerk in Dept 10 or 30.
+SELECT * FROM employees WHERE job = 'CLERK' AND deptno IN (10, 30);
+
+# Question 5:
+# Names of employees having character 'A' in their names.
+SELECT ename FROM employees WHERE ename LIKE '%A%';
+
+# Question 6:
+# Names of employees having 'S' as the last character.
+SELECT ename FROM employees WHERE ename LIKE '%S';
+
+# Question 7:
+# Name and hire date of employees hired after 1982 but before 1987.
+SELECT ename, hiredate FROM employees WHERE hiredate > '__-___-82' AND hiredate < '__-___-87';
+
+# Question 8:
+# Details of employees working as an analyst and earning a 4-digit salary.
+SELECT * FROM employees WHERE job = 'ANALYST' AND sal BETWEEN 1000 AND 9999;
+
+# Question 9:
+# Names of employees hired in the first month.
+SELECT ename FROM employees WHERE hiredate LIKE '__-JAN-%';
+
+# Question 10:
+# Name of employees working as a salesman and who earn a commission.
+SELECT ename FROM employees WHERE job = 'SALESMAN' AND comm > 0;
+
+# Question 11:
+# Names and salary of employees hired during 1991 who don’t earn any commission.
+SELECT ename, sal FROM employees WHERE hiredate LIKE '__-___-91' AND comm IS NULL;
+
+# Question 12:
+# Details of employees in Dept 40.
+SELECT * FROM employees WHERE deptno = 40;
+
+# Question 13:
+# Names of employees with two 'L's present in the name.
+SELECT ename FROM employees WHERE ename LIKE '%L%L%';
+
+# Question 14:
+# Names of employees who earn commission but not salary.
+SELECT ename FROM employees WHERE comm IS NOT NULL AND sal IS NULL;
+
+# Question 15:
+# Names of employees whose name starts with 'A', 'R', or 'S'.
+SELECT ename FROM employees WHERE ename LIKE 'A%' OR ename LIKE 'R%' OR ename LIKE 'S%';
+
+# Question 16:
+# Names of employees in Dept 10 with no commission.
+SELECT ename FROM employees WHERE deptno = 10 AND comm IS NULL;
+
+# Question 17:
+# Names of employees hired after 1984 whose name ends with 'S'.
+SELECT ename FROM employees WHERE hiredate > '__-___-84' AND ename LIKE '%S';
