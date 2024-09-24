@@ -1,5 +1,59 @@
 # Question 1:
 # Details of employees working in Dept 10 or 30.
+
+# Question 2:
+# Names of employees hired during 1982.
+
+# Question 3:
+# Name and salary of employees earning commission.
+
+# Question 4:
+# Details of employees working as a clerk in Dept 10 or 30.
+
+# Question 5:
+# Names of employees having character 'A' in their names.
+
+# Question 6:
+# Names of employees having 'S' as the last character.
+
+# Question 7:
+# Name and hire date of employees hired after 1982 but before 1987.
+
+# Question 8:
+# Details of employees working as an analyst and earning a 4-digit salary.
+
+# Question 9:
+# Names of employees hired in the first month.
+
+# Question 10:
+# Name of employees working as a salesman and who earn a commission.
+
+# Question 11:
+# Names and salary of employees hired during 1991 who don’t earn any commission.
+
+# Question 12:
+# Details of employees in Dept 40.
+
+# Question 13:
+# Names of employees with two 'L's present in the name.
+
+# Question 14:
+# Names of employees who earn commission but not salary.
+
+# Question 15:
+# Names of employees whose name starts with 'A', 'R', or 'S'.
+
+# Question 16:
+# Names of employees in Dept 10 with no commission.
+
+# Question 17:
+# Names of employees hired after 1984 whose name ends with 'S'.
+
+
+
+
+# Question 1:
+# Details of employees working in Dept 10 or 30.
 SELECT * FROM employees WHERE deptno IN (10, 30);
 
 # Question 2:
